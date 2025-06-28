@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+*.egg-info/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings (if applicable)
+.vscode/
+
+# Data folders (customize as needed)
+
+
+# Model and intermediate outputs
+*.pkl
+*.joblib
+*.h5
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# Environment & dependency files (if not versioned)
+*.env
+*.yml
+Pipfile.lock
