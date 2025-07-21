@@ -1,0 +1,41 @@
+# Configuration file for scaling analysis
+# Define pairs of variables to analyze for scaling relationships
+
+scaling_pairs:
+  - x_col: "GDP (output, multiple price benchmarks)_log"
+    y_col: "Primary energy consumption (TWh)_log"
+    title: "GDP vs Energy Consumption (log-log)"
+    save_path: "reports/figures/gdp_vs_energy_loglog.png"
+    
+  - x_col: "Population - Sex: all - Age: all - Variant: estimates_log"
+    y_col: "GDP (output, multiple price benchmarks)_log"
+    title: "GDP vs Population (log-log)"
+    save_path: "reports/figures/gdp_vs_pop_loglog.png"
+    
+  - x_col: "Population - Sex: all - Age: all - Variant: estimates_log"
+    y_col: "Primary energy consumption (TWh)_log"
+    title: "Energy Consumption vs Population (log-log)"
+    save_path: "reports/figures/energy_vs_pop_loglog.png"
+    
+  - x_col: "Urban population_log"
+    y_col: "GDP (output, multiple price benchmarks)_log"
+    title: "GDP vs Urban Population (log-log)"
+    save_path: "reports/figures/gdp_vs_urban_pop_loglog.png"
+    
+  - x_col: "Urban population_log"
+    y_col: "Primary energy consumption (TWh)_log"
+    title: "Energy Consumption vs Urban Population (log-log)"
+    save_path: "reports/figures/energy_vs_urban_pop_loglog.png"
+
+# Analysis parameters
+analysis_params:
+  year_min: 1990
+  year_max: 2019
+  null_threshold: 0.8
+  column_threshold: 0.2
+  log_base: 2.718281828459045  # e (natural log)
+
+# Data processing options
+data_processing:
+  remove_medium_variant: true
+  convert_energy_units: false  # Set to true if you want TWh to kWh conversion 

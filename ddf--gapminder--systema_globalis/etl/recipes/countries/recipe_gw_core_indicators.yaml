@@ -1,0 +1,19 @@
+info:
+    id: core_indicators
+    base:
+        - &u5mr open-numbers/ddf--gapminder--child_mortality
+
+config:
+    # the path to search recipe files to include
+    recipes_dir: ./
+
+# define your ingredients and procedures below
+ingredients:
+    - id: u5mr-datapoints-final
+      dataset: *u5mr
+      key: geo, time
+      value:
+          - child_mortality_0_5_year_olds_dying_per_1000_born
+
+serving:
+    - id: u5mr-datapoints-final

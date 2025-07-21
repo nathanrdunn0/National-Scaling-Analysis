@@ -39,4 +39,5 @@ build/
 # Environment & dependency files (if not versioned)
 *.env
 *.yml
+!environment.yml
 Pipfile.lock

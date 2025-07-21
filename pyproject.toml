@@ -1,0 +1,17 @@
+[project]
+name = "scaling-analysis"
+version = "0.1.0"
+description = "Scaling laws of GDP and energy vs population"
+authors = [{name = "Your Name"}]
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "scipy"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
